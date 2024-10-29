@@ -1,10 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import TodoList from "./components/TodoList";
+import RouteList from "./RouteList";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <>
-      <TodoList />
+      <BrowserRouter>
+        <Nav />
+        <RouteList />
+      </BrowserRouter>
     </>
   );
 }
