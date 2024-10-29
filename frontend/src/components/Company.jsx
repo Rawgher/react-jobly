@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import JoblyApi from "../helpers/api";
-import JobsList from "./JobsList";
+import JobCard from "./JobCard";
 import "./Company.css";
 
 function Company() {
@@ -35,7 +35,7 @@ function Company() {
       <h2>{name}</h2>
       <p>{description}</p>
       {jobs.map(({ id, equity, salary, title }) => (
-        <JobsList key={id} companyD={{ id, equity, salary, title }} />
+        <JobCard key={id} data={{ id, equity, salary, title }} />
       ))}
     </div>
   );

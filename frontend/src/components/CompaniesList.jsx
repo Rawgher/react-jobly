@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import JoblyApi from "../helpers/api";
-import "./CompaniesList.css";
 import SearchInput from "./SearchInput";
 import CompanyCard from "./CompanyCard";
+import "./CompaniesList.css";
 
 function CompaniesList() {
   const [companies, setCompanies] = useState(null);
