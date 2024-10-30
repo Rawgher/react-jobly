@@ -8,3 +8,7 @@
 .JobCard-body {
   color: #000;
 }
+
+.JobCard-apply {
+  background-color: green;
+}
